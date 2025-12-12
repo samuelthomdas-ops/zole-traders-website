@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zole Traders — Supplying Authentic South Asian Food</title>
+  <style>
+    :root{
+      --bg:#0b0b0b;--muted:#9aa0a6;--accent:#ff6b3d;--card:#0f1112;--glass:rgba(255,255,255,0.03);
+      --maxw:1100px;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#060606 0%, #0f0f12 100%);color:#eef1f4;line-height:1.45}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:36px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffd06b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b0b0b}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-size:48px;letter-spacing:-1px;margin:0}
+    .hero p{color:var(--muted);margin-top:12px}
+    .cta{margin-top:22px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#0b0b0b;font-weight:600;text-decoration:none}
+    .hero-card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    .dish{display:flex;gap:12px;align-items:center}
+    .dish img{width:88px;height:66px;object-fit:cover;border-radius:8px}
+    .dish h4{margin:0;font-size:16px}
+    .dish p{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+    /* featured grid */
+    .section{padding:48px 0;border-top:1px solid rgba(255,255,255,0.03)}
+    .featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--glass);padding:18px;border-radius:12px}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .kicker{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:8px}
+
+    /* about */
+    .about{display:flex;gap:22px;align-items:center}
+    .about img{width:420px;height:320px;object-fit:cover;border-radius:12px}
+
+    /* menu */
+    .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .menu-item{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:10px}
+    .price{font-weight:700;color:var(--accent)}
+
+    /* partners */
+    .partners{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+    .partner{background:rgba(255,255,255,0.02);padding:8px 12px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    /* contact */
+    footer{padding:36px 0}
+    .contact-form{background:var(--card);padding:18px;border-radius:10px}
+    input,textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .featured-grid,.menu-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .featured-grid,.menu-grid{grid-template-columns:1fr}
+      header{padding:12px 0}
+      .hero h1{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark">SA</div>
+        <div>
+          <div style="font-weight:700">Zole Traders ltd</div>
+          <div style="font-size:12px;color:var(--muted)">Authentic | Fresh | Homestyle</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#featured">Featured</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Bold South Asian Flavours. Crafted with Heart.</h1>
+        <p>From Kerala street bites to seafood curries — home-cooked recipes, sourced ingredients, spice-forward profiles. We deliver experiences, not just meals.</p>
+        <div class="cta">
+          <a class="btn" href="#menu">View Menu</a>
+          <a style="margin-left:12px;color:var(--muted);text-decoration:none" href="#contact">Book a Catering</a>
+        </div>
+
+        <div style="margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+          <div class="hero-card"> 
+            <div class="kicker">Chef's Special</div>
+            <div class="dish">
+              <img src="https://images.unsplash.com/photo-1604908177522-1c6b1c3b1a2a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd" alt="Biryani">
+              <div>
+                <h4>Hyderabadi Biryani</h4>
+                <p>Slow cooked, saffron rice with tender meat and raita.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="kicker">Popular</div>
+            <div class="dish">
+              <img src="https://images.unsplash.com/photo-1604908177622-3d3a2c3b2a2b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh" alt="Dosa">
+              <div>
+                <h4>Masala Dosa</h4>
+                <p>Crispy crepe filled with spiced potatoes, served with chutneys.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div style="font-size:12px;color:var(--muted);font-weight:700">Today’s Picks</div>
+        <div style="margin-top:10px">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div class="dish"><img src="https://images.unsplash.com/photo-1601050690594-1a1a1a1a1a1a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ijkl" alt="Kebab"><div><h4>Seekh Kebab</h4><p>Smoky spiced skewers.</p></div></div>
+            <div class="dish"><img src="https://images.unsplash.com/photo-1617191515605-27c5b8f2a4a4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=mnop" alt="Curry"><div><h4>Goan Prawn Curry</h4><p>Coconut, tamarind and heat.</p></div></div>
+            <div class="dish"><img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f6c6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=qrst" alt="Sweets"><div><h4>Gulab Jamun</h4><p>Cardamom-scented syrup balls.</p></div></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="featured" class="section">
+      <div style="display:flex;justify-content:space-between;align-items:end">
+        <div>
+          <div class="kicker">Featured</div>
+          <h2 style="margin:6px 0 0">Explore signature dishes</h2>
+          <p style="color:var(--muted);max-width:520px">A rotating selection of regional highlights — bold, seasonal, and cooked with traditional techniques.</p>
+        </div>
+        <div style="color:var(--muted);font-size:13px">See our full menu →</div>
+      </div>
+
+      <div style="margin-top:18px" class="featured-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1603079831975-9f9f9f9f9f9f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=aaaa" alt="Thali">
+          <div style="margin-top:10px"><div class="kicker">Thali</div><h3 style="margin:6px 0">Punjabi Thali</h3><p style="color:var(--muted)">A generous spread of curry, sabzi, dal, rice and breads.</p></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908177522-222222222222?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=bbbb" alt="Biryani">
+          <div style="margin-top:10px"><div class="kicker">Biryani</div><h3 style="margin:6px 0">Awadhi Biryani</h3><p style="color:var(--muted)">Aromatic, layered rice cooked over dum.</p></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604908177522-333333333333?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=cccc" alt="Korma">
+          <div style="margin-top:10px"><div class="kicker">Coastal</div><h3 style="margin:6px 0">Kerala Fish Curry</h3><p style="color:var(--muted)">Tamarind and coconut, seaside warmth.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div style="display:flex;justify-content:space-between;align-items:end">
+        <div>
+          <div class="kicker">Menu</div>
+          <h2 style="margin:6px 0 0">Our most loved plates</h2>
+        </div>
+        <div style="color:var(--muted);font-size:13px">Open daily 11:30–22:00</div>
+      </div>
+
+      <div style="margin-top:18px" class="menu-grid">
+        <div class="menu-item"><h4 style="margin:0">Chicken Tikka Masala <span class="price">€12</span></h4><p style="color:var(--muted);margin-top:6px">Creamy tomato curry, roasted chicken pieces.</p></div>
+        <div class="menu-item"><h4 style="margin:0">Paneer Butter Masala <span class="price">€10</span></h4><p style="color:var(--muted);margin-top:6px">Soft cottage cheese in buttery gravy.</p></div>
+        <div class="menu-item"><h4 style="margin:0">Lamb Rogan Josh <span class="price">€14</span></h4><p style="color:var(--muted);margin-top:6px">Slow-cooked lamb with Kashmiri spices.</p></div>
+        <div class="menu-item"><h4 style="margin:0">Masala Dosa <span class="price">€9</span></h4><p style="color:var(--muted);margin-top:6px">Crispy rice crepe with spiced potato filling.</p></div>
+        <div class="menu-item"><h4 style="margin:0">Kathi Roll <span class="price">€8</span></h4><p style="color:var(--muted);margin-top:6px">Street-style wrap with pickled onions.</p></div>
+        <div class="menu-item"><h4 style="margin:0">Gulab Jamun (2pc) <span class="price">€5</span></h4><p style="color:var(--muted);margin-top:6px">Sweet dumplings in rose syrup.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="about">
+        <div>
+          <div class="kicker">About</div>
+          <h2>Recipes passed down through generations</h2>
+          <p style="color:var(--muted);max-width:540px">South Asian Kitchen celebrates the diversity of South Asian cuisines — Bengali, Punjabi, Goan, Tamil and more. We source spices from regional farms and blend them in small batches to preserve authentic aroma.</p>
+          <p style="margin-top:12px;color:var(--muted)"><strong>Our promise:</strong> Real ingredients, honest cooking, love in every plate.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1512058564366-c9e3e1b4f6c2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=uvwx" alt="Kitchen"> 
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="kicker">Partners</div>
+          <h3 style="margin:6px 0">Local suppliers & farms</h3>
+        </div>
+        <div style="color:var(--muted);font-size:13px">Trusted since 2019</div>
+      </div>
+      <div style="margin-top:12px" class="partners">
+        <div class="partner">SpiceCo</div>
+        <div class="partner">Coastal Fishers</div>
+        <div class="partner">Herbal Mills</div>
+        <div class="partner">Flatbread Collective</div>
+      </div>
+    </section>
+
+    <footer id="contact" class="section">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:start">
+        <div>
+          <div class="kicker">Contact</div>
+          <h2 style="margin:6px 0">Catering, private events, and reservations</h2>
+          <p style="color:var(--muted);max-width:560px">Email us for bookings or call to speak with our culinary team. We offer bespoke menus for weddings, corporate events, and private celebrations.</p>
+          <div style="margin-top:12px;color:var(--muted)"><strong>Email:</strong> hello@southasiankitchen.example<br><strong>Phone:</strong> +353 1 234 5678</div>
+
+          <div style="margin-top:18px">
+            <a class="btn" href="mailto:hello@southasiankitchen.example">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form onsubmit="alert('This is a demo form. Replace the handler with your server endpoint.');return false;">
+            <label>Name</label>
+            <input required placeholder="Your name">
+            <label style="margin-top:8px">Email</label>
+            <input required placeholder="you@domain.com" type="email">
+            <label style="margin-top:8px">Message</label>
+            <textarea rows="4" placeholder="Event date, headcount, menu preferences"></textarea>
+            <div style="margin-top:10px"><button class="btn" type="submit">Send request</button></div>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;color:var(--muted);font-size:13px">© South Asian Kitchen 2025 • All rights reserved</div>
+    </footer>
+  </div>
+</body>
+</html>
